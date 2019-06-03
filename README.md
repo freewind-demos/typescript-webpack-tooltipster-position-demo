@@ -1,7 +1,7 @@
-TypeScript Webpack Tooltipster Demo
-=======================================
+TypeScript Webpack Tooltipster Position Demo
+============================================
 
-在link上显示tooltip
+会根据位置自动选择合适的弹出位置
 
 ```
 npm install

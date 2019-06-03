@@ -5,17 +5,17 @@ import 'tooltipster/dist/css/tooltipster.bundle.min.css';
 
 $('a').tooltipster({
   side: 'bottom',
-  content: 'loading ...',
-  delay: 200,
-  interactive: true,
-  trigger: 'hover',
-  functionInit: (instance) => {
-    console.log('> functionInit');
-    setTimeout(() => {
-      instance.content('Hello, tooltipster');
-    }, 5000)
-  },
-  functionAfter: () => {
-    console.log('> functionAfter');
-  }
+  content: `
+  <div>
+    <p>asfsdfsdfasdfasfsdfdsfasdf</p>
+    <p>asfsdfsdfasdfasfsdfdsfasdf</p>
+    <p>asfsdfsdfasdfasfsdfdsfasdf</p>
+    <p>asfsdfsdfasdfasfsdfdsfasdf</p>
+    <p>asfsdfsdfasdfasfsdfdsfasdf</p>
+    <p>asfsdfsdfasdfasfsdfdsfasdf</p>
+    <p>asfsdfsdfasdfasfsdfdsfasdf</p>
+  </div>
+  `,
+  contentAsHTML: true,
+  trigger: 'hover'
 })
